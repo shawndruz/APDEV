@@ -13,7 +13,7 @@ function handleLogin(event) {
         sessionStorage.setItem('isLoggedIn', true);
     }
 
-    window.location.href = 'website.html';
+    window.location.href = '/views/website.html';
 }
 
 function handleLogout() {
@@ -23,7 +23,7 @@ function handleLogout() {
     sessionStorage.removeItem('username');
     sessionStorage.removeItem('isLoggedIn');
 
-    window.location.href = 'login.html';
+    window.location.href = '/views/login.html';
 }
 
 function checkLoginStatus() {
@@ -36,7 +36,7 @@ function checkLoginStatus() {
         authButton.onclick = handleLogout;
     } else {
         authButton.innerHTML = '<img src="images/SignInButton.png" alt="SIGN IN">';
-        authButton.onclick = () => window.location.href = 'login.html';
+        authButton.onclick = () => window.location.href = '/views/login.html';
     }
 }
 
