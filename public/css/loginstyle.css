@@ -1,0 +1,184 @@
+body {
+    background-color: rgb(255, 230, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    padding: 20px 0; 
+}
+
+.Logo {
+    background-image: url('images/ChiVogueLogo.png');
+    background-size: contain; 
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 200px;
+    top: 0;
+    left: 50%; 
+    transform: translateX(-50%); 
+    display: flex;
+    position: absolute;
+}
+
+.SignInBox {
+    width: 590px; 
+    height: auto; 
+    background-color: rgb(255, 240, 243);
+    position: absolute;
+    border-radius: 15px; 
+    left: 50%;
+    top: 150px;
+    transform: translate(-50%); 
+    padding: 20px; 
+    margin: 10px;
+    z-index: 1;
+}
+
+.SignIn {
+    position: relative; 
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%); 
+    height: 80px;
+    width: auto; 
+    margin-bottom: 20px; 
+    z-index: 2;
+}
+
+.LoginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.LoginForm input[type="text"], 
+.LoginForm input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+.RememberMeContainer {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    width: 80%;
+}
+
+.RememberMeContainer input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.RememberMeContainer label {
+    color: grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.LoginForm button {
+    width: 85%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(255, 105, 135);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.LoginForm button:hover {
+    background-color: rgb(255, 75, 105);
+}
+
+.SignUpBox {
+    width: 590px; 
+    height: auto;
+    background-color: rgb(255, 240, 243);
+    position: absolute;
+    border-radius: 15px; 
+    left: 50%;
+    top: 150px; 
+    transform: translate(-50%);
+    padding: 20px; 
+    margin: 10px;
+}
+
+.SignUp {
+    position: relative; 
+    top: 0px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    height: 80px; 
+    width: auto;
+    margin-bottom: 20px; 
+}
+
+.SignUpForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SignUpForm input[type="email"],
+.SignUpForm input[type="text"], 
+.SignUpForm input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+.SignUpForm button {
+    width: 85%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(255, 105, 135);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.SignUpForm button:hover {
+    background-color: rgb(255, 75, 105);
+}
+
+.SignUpLink, .SignInLink {
+    margin-top: 10px;
+    color: grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.SignUpLink a, .SignInLink a {
+    color: rgb(255, 105, 135);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.SignUpLink a:hover, .SignInLink a:hover {
+    color: rgb(255, 75, 105);
+}

@@ -1,0 +1,208 @@
+body {
+    background-color: #FFE6EB;
+}
+
+.Logo {
+    background-image: url('images/ChiVogueLogo.png');
+    background-position: left top;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    width: 460px; 
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 45px;
+}
+
+.TopContainer {
+    width: 1440px;
+    height: 200px;
+    background-color: #FFF0F3;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1; 
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.RightContainer {
+    width: 290px;
+    height: 800px;
+    background-color: #FFF0F3;
+    position: fixed; 
+    right: 0;
+    bottom: 0;
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+
+
+.UserInfo {
+    position: fixed;
+    margin-top: -220px; 
+    left: 70px;
+    z-index: 2;
+}
+
+.Avatar {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    position: absolute; 
+    top: -70px; /* Negative para on top of the TopContainer */
+    z-index: 2; 
+}
+
+.Username {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    position: absolute;
+    top: -10px; 
+    left: 260px; 
+    z-index: 3;
+}
+
+.Bio {
+    font-size: 15px;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    position: absolute;
+    top: 40px;
+    left: 260px; 
+    z-index: 3; 
+}
+
+.HomeButton {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    top: 290px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    cursor: pointer; 
+}
+
+.HomeButton img {
+    height: 100px; 
+    width: auto; 
+}
+
+.EditProfileButton {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    top: 360px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    cursor: pointer; 
+}
+
+.EditProfileButton img {
+    height: 100px; 
+    width: auto; 
+}
+
+.SignOutButton {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    top: 430px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    cursor: pointer; 
+}
+
+.SignOutButton img {
+    height: 100px; 
+    width: auto; 
+}
+
+.MiddleContainer {
+    margin-top: 400px; 
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.HeaderText { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+}
+
+#PostContainer {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.PostBox {
+    width: 640px;
+    min-width: 350px;
+    min-height: 70px;
+    max-height: 270px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+    transition: max-height 0.3s ease-in-out, height 0.3s ease-in-out;
+    margin: 10px;
+}
+
+.PostTop {
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    margin-bottom: 10px; 
+}
+
+.PostTop img{
+    width: 30px;
+    height: auto;
+    top: 0px;
+    left: 0px;
+}
+
+.PostHeader {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.PostAuthor {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px; 
+    text-align: justify;
+    font-style: italic;
+    line-height: 1.5; 
+}
+
+.PostBody {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px; 
+    text-align: justify;
+    line-height: 1.5; 
+}
+
+.PostBox:hover {
+    max-height: none; 
+    overflow: visible; 
+    transition: max-height 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+.PostFooter {
+    display: flex;
+    margin-top: 10px; 
+}

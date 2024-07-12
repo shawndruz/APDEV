@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create Post</title>
+    <link rel="stylesheet" href="createpost.css">
+</head>
+<body>
+    <header>
+        <div class="TopContainer">
+            <div class="Logo"></div>
+        </div>
+    </header>
+    
+    <div class="LeftSidebarContainer">
+        <button class="HomeButton"><img src="images/HomeButton.png" alt="HOME"></button>
+    </div>
+
+    <div class="RightSidebarContainer"></div>
+
+    <div class="MiddleContainer">
+        <div class="PostBox">
+            <form id="createPostForm">
+                <div class="FormField">
+                    <label for="topic">Topic:</label>
+                    <input type="text" id="topic" name="topic" required>
+                </div>
+                <div class="FormField">
+                    <label for="header">Header:</label>
+                    <input type="text" id="header" name="header" required>
+                </div>
+                <div class="FormField">
+                    <label for="content">Content:</label>
+                    <textarea id="content" name="content" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="PostButton"><img src="images/PostButton.png" alt="POST"></button>
+            </form>
+        </div>
+    </div>
+    
+    <button id="BackButton" class="BackButton"><img src="images/BackButton.png" alt="BACK"></button>
+    <script src="createpost.js"></script>
+</body>
+</html>

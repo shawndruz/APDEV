@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ChiVOGUE: CCAPDEV MCO1 Phase 1</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <header>
+        <div class="TopContainer">
+            <div class="Logo"></div>
+            <input id="Searchbar" type="text" class="Searchbar" placeholder="Search...">
+            <div id="authButtonContainer" class="Button">
+                <button id="authButton" class="Button"><img src="images/SignInButton.png" alt="SIGN IN"></button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="LeftSidebarContainer">
+        <a href="website.html" class="HomeButton">
+            <button class="HomeButton"><img src="images/HomeButton.png" alt="HOME"></button>
+        </a>
+
+        <img src="images/TopicsButton.png" class="Topics" alt="TOPICS">
+        <div id="TopicsContainer" class="TopicsList">
+            <ul id="TopicsList">
+                <!-- Topics will be inserted here -->
+            </ul>
+        </div>
+
+        <div id="UserDisplay" class="UserDisplay">
+            <!-- User should be displayed here -->
+        </div>
+
+        <div class="UserContainer">
+            <a href="userpage.html" class="UserLink">
+                <img src="images/Avatar.png" class="Avatar" alt="Profile Picture">
+                <img src="images/ViewProfileButton.png" class="ViewProfileButton">
+            </a>
+        </div>
+        
+    </div>
+
+    <div class="RightSidebarContainer">
+        <button id="CreatePostButton" class="CreatePostButton"><img src="images/CreatePostButton.png" alt="+ CREATE POST"></button>
+
+        <div class="FriendsBar">
+            <img src="images/FriendsList.png" class="FriendsList" alt="Friends List">
+        </div>
+    </div>
+
+    <div class="MiddleContainer">
+        <div id="PostContainer">
+            <!-- Posts will be inserted here -->
+        </div>
+    </div>
+
+    <script src="loginscript.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
